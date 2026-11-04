@@ -1,0 +1,73 @@
+.aic-app .workflow-center { display: grid; gap: 20px; }
+.aic-app .workflow-hero { display: flex; align-items: center; gap: 21px; padding: 26px; border: 1px solid #315b8c; border-radius: 12px; background: radial-gradient(ellipse at 0 0, #2b5dac66, transparent 60%), linear-gradient(100deg, #112947, #0c1a30); }
+.aic-app .workflow-logo { display: grid; place-items: center; width: 62px; height: 62px; flex-shrink: 0; border: 1px solid #5c8dd3; border-radius: 17px; background: linear-gradient(145deg, #2d60ab, #183866); color: #c0e8ff; box-shadow: 0 0 30px #4e8bff20; }
+.aic-app .workflow-hero h2 { margin: 6px 0; font-size: 23px; font-weight: 600; }
+.aic-app .workflow-hero p { font-size: 12px; color: #85a7c8; }
+.aic-app .workflow-hero > .badge { margin-left: auto; }
+.aic-app .workflow-hero .eyebrow { color: #739fdf; font-size: 8px; }
+.aic-app .provider-bar { display: flex; align-items: center; gap: 20px; padding: 14px 19px; background: #0d2034; border: 1px solid #21405d; border-radius: 8px; flex-wrap: wrap; }
+.aic-app .provider-bar > div { display: flex; align-items: center; gap: 9px; font-size: 11px; }
+.aic-app .provider-bar b { font-weight: 500; }
+.aic-app .provider-bar > div > span:last-child { color: #7695b2; }
+.aic-app .provider-dot { width: 6px; height: 6px; border-radius: 50%; background: #66abff; box-shadow: 0 0 8px #5d9eff; }
+.aic-app .provider-bar label { margin-left: auto; display: flex; gap: 10px; align-items: center; font-size: 11px; color: #8facbf; }
+.aic-app .provider-bar .text-button { width: auto; margin: 0; padding: 0; }
+.aic-app .model-setup p { color: #8cabc3; font-size: 12px; margin: 12px 0; }
+.aic-app .workflow-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }
+.aic-app button.workflow-card { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; text-align: left; padding: 16px; background: linear-gradient(145deg, #11283e, #0c1a2d); border: 1px solid #25445f; border-radius: 9px; gap: 0; min-width: 0; }
+.aic-app button.workflow-card:hover { border-color: #4d84b6; background: #17314e; }
+.aic-app button.workflow-card.selected { border-color: #629df0; background: linear-gradient(145deg, #204779, #142c4b); box-shadow: inset 0 0 0 1px #5c90c933, 0 0 20px #366bd014; }
+.aic-app .workflow-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 13px; }
+.aic-app .workflow-card-top i { color: #7faeeb; background: #1a3555; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 7px; }
+.aic-app .workflow-card-top > span { color: #476786; font: 13px ui-monospace, monospace; }
+.aic-app .workflow-card.selected .workflow-card-top > span { color: #82afe7; }
+.aic-app .workflow-card > b { font-size: 13px; color: #cadff0; font-weight: 500; }
+.aic-app .workflow-card p { font-size: 10px; line-height: 1.8; color: #7899b3; margin: 8px 0 15px; }
+.aic-app .workflow-card-bottom { display: flex; justify-content: space-between; align-items: center; color: #618fbd; font-size: 9px; margin-top: auto; border-top: 1px solid #2a4a6722; padding-top: 9px; }
+.aic-app .workflow-body { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: 20px; align-items: start; }
+.aic-app .workflow-description { color: #86a6be; font-size: 12px; margin-bottom: 18px; }
+.aic-app .workflow-inputs { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; background: #0b1d30; padding: 16px; border: 1px solid #203c56; border-radius: 7px; }
+.aic-app .workflow-inputs small { display: block; color: #668aa8; font-size: 10px; }
+.aic-app .workflow-inputs b { display: block; color: #b1cde1; font-weight: 400; font-size: 11px; margin-top: 5px; }
+.aic-app .workflow-question { display: grid; gap: 10px; color: #94b0c5; font-size: 11px; margin: 20px 0; }
+.aic-app .workflow-question textarea { font-family: inherit; font-size: 12px; line-height: 1.8; color: #c5ddeb; resize: vertical; min-height: 90px; background: #0a1b2d; border: 1px solid #2b4a65; border-radius: 7px; padding: 12px; width: 100%; }
+.aic-app .workflow-question textarea::placeholder { color: #55748b; }
+.aic-app .execution-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin: 25px 0; }
+.aic-app .execution-steps > div { display: flex; flex-direction: column; gap: 9px; align-items: center; text-align: center; position: relative; }
+.aic-app .execution-steps > div:not(:last-child)::after { content: ''; height: 1px; width: calc(100% - 30px); background: #2b4962; position: absolute; top: 13px; left: calc(50% + 20px); }
+.aic-app .execution-steps span { display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid #3b5871; background: #11273d; border-radius: 50%; color: #7592aa; font: 10px ui-monospace, monospace; }
+.aic-app .execution-steps small { color: #6c8da7; font-size: 9px; }
+.aic-app .execution-steps .complete span { color: #9de7df; border-color: #428a87; background: #193d46; }
+.aic-app .execution-steps .working span { color: #bbddff; border-color: #82b6f6; animation: workflow-glow 1.6s ease-in-out infinite; }
+.aic-app .runner-actions { display: flex; gap: 10px; }
+.aic-app .runner-actions .primary { flex: 1; font-size: 12px; background: linear-gradient(100deg, #70a4fc, #49b6ed); }
+.aic-app .workflow-disclosure { margin-top: 14px; font-size: 10px; color: #6287a2; line-height: 1.8; }
+.aic-app .workflow-empty { text-align: center; padding: 40px 15px; }
+.aic-app .workflow-wait { width: 90px; height: 90px; margin: 0 auto 28px; display: grid; place-items: center; color: #8abcf4; border-radius: 50%; border: 1px solid #35639a; background: radial-gradient(circle, #254a77, #102137); box-shadow: 0 0 0 10px #35659b0c, 0 0 0 22px #35659b06; }
+.aic-app .workflow-wait.working { animation: workflow-glow 1.8s ease-in-out infinite; }
+.aic-app .workflow-empty h3 { color: #a2c1d8; font-size: 15px; }
+.aic-app .workflow-empty p { font-size: 11px; color: #5f84a0; margin-top: 10px; }
+.aic-app .result-source { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 16px; }
+.aic-app .result-source > span:last-child { color: #7291ab; font-size: 10px; }
+.aic-app .workflow-summary { font-size: 13px; line-height: 1.9; color: #adcbdc; padding-bottom: 20px; }
+.aic-app .workflow-observations { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
+.aic-app .workflow-observations > div { padding: 13px; border: 1px solid #25425b; background: #0c2134; border-radius: 7px; }
+.aic-app .workflow-observations span { display: block; font-size: 10px; color: #7398b0; }
+.aic-app .workflow-observations b { display: block; font-size: 15px; font-weight: 500; color: #a4d9ef; margin: 7px 0; overflow-wrap: anywhere; }
+.aic-app .workflow-observations small { display: block; font-size: 9px; line-height: 1.7; color: #577c97; }
+.aic-app .result-section-label { font-size: 12px; color: #adc8dc; margin: 23px 0 12px; }
+.aic-app .result-section-label span { margin-left: 8px; color: #76b7ef; }
+.aic-app .workflow-clear { padding: 13px; border: 1px solid #285058; color: #78b7b9; background: #11303b; border-radius: 6px; font-size: 11px; }
+.aic-app .next-steps { padding-left: 20px; color: #8cabc1; font-size: 12px; line-height: 1.9; }
+.aic-app .next-steps li { padding: 3px 0; }
+.aic-app .result-snapshot { border-top: 1px solid #1e3b52; margin-top: 17px; padding-top: 13px; color: #64839e; font-size: 10px; }
+.aic-app .workflow-history > div:last-child { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+.aic-app .workflow-history button { display: flex; gap: 12px; justify-content: flex-start; text-align: left; background: #10273b; border: 1px solid #244760; color: #759ab9; padding: 13px; }
+.aic-app .workflow-history button > span { flex: 1; }
+.aic-app .workflow-history b { display: block; font-size: 11px; color: #a2c3db; font-weight: 400; }
+.aic-app .workflow-history small { display: block; font-size: 9px; margin-top: 5px; }
+@keyframes workflow-glow { 50% { box-shadow: 0 0 25px #529cff45; } }
+@media (max-width: 1250px) { .aic-app .workflow-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } .aic-app .workflow-hero { flex-wrap: wrap; } .aic-app .workflow-hero > .badge { margin-left: 0; } }
+@media (max-width: 960px) { .aic-app .workflow-body { grid-template-columns: 1fr; } .aic-app .workflow-history > div:last-child { grid-template-columns: repeat(2,minmax(0,1fr)); } .aic-app .provider-bar label { margin-left: 0; } }
+@media (max-width: 640px) { .aic-app .workflow-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; } .aic-app button.workflow-card { padding: 12px; } .aic-app .workflow-card > b { font-size: 12px; } .aic-app .workflow-hero { padding: 20px; gap: 15px; } .aic-app .workflow-hero h2 { font-size: 19px; } .aic-app .workflow-logo { width: 46px; height: 46px; border-radius: 12px; } .aic-app .workflow-history > div:last-child { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .aic-app .workflow-wait.working, .aic-app .execution-steps .working span { animation: none; } }

@@ -1,0 +1,235 @@
+/* AIC dashboard styles, scoped to keep the legacy view independent. */
+body { margin: 0; }
+.aic-app { --bg: #0a101c; --panel: #111d29; --line: #253440; --muted: #8b9eaa; --green: #62dfb8; color: #e2eceb; background: var(--bg); min-height: 100vh; font: 14px/1.6 Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; display: flex; }
+.aic-app *, .aic-app *::before, .aic-app *::after { box-sizing: border-box; }
+.aic-app button, .aic-app input, .aic-app select { font: inherit; color: inherit; }
+.aic-app button { cursor: pointer; border: 1px solid transparent; border-radius: 7px; background: none; padding: 9px 14px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.aic-app button:hover { background-color: #203442; }
+.aic-app button:disabled { opacity: .4; cursor: not-allowed; }
+.aic-app :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.aic-app a { color: inherit; text-decoration: none; }
+.aic-app h1, .aic-app h2, .aic-app h3, .aic-app p { margin: 0; }
+.aic-app h2 { font-size: 17px; font-weight: 600; }
+.aic-app h3 { font-size: 16px; }
+.aic-app small { font-size: 12px; }
+.aic-app svg { flex-shrink: 0; vertical-align: middle; }
+.aic-app .sidebar { width: 218px; flex-shrink: 0; background: #0d1722; border-right: 1px solid var(--line); padding: 28px 17px 18px; height: 100vh; position: sticky; top: 0; display: flex; flex-direction: column; }
+.aic-app .brand { display: flex; align-items: center; gap: 12px; padding: 0 14px 35px; }
+.aic-app .brand-symbol { width: 42px; height: 46px; display: grid; place-items: center; border: 1px solid #386052; border-radius: 12px; color: var(--green); background: #16352f; }
+.aic-app .brand b { font-size: 29px; letter-spacing: 3px; line-height: 1; }
+.aic-app .brand small { display: block; letter-spacing: 4px; color: #afc1c6; }
+.aic-app .brand-dot, .aic-app .green-text { color: var(--green); }
+.aic-app .workspace-label { font-size: 9px; color: #6d8393; letter-spacing: 2px; margin: 0 13px 14px; }
+.aic-app nav { display: grid; gap: 7px; }
+.aic-app nav button, .aic-app .sidebar-link { width: 100%; justify-content: flex-start; color: #9aadb9; padding: 13px; gap: 13px; }
+.aic-app nav button.active, .aic-app .sidebar-link.active { background: #1c3533; color: #8ce9c9; border-color: #2b5046; }
+.aic-app nav em { margin-left: auto; border-radius: 4px; padding: 0 5px; background: #614a2d; color: #f3c17d; font-size: 11px; font-style: normal; }
+.aic-app .sidebar-divider { border-top: 1px solid var(--line); margin: 22px 12px 13px; }
+.aic-app .external-arrow { margin-left: auto; }
+.aic-app .sidebar-bottom { margin-top: auto; padding-top: 30px; }
+.aic-app .project-mini { border: 1px solid var(--line); border-radius: 9px; padding: 17px; background: #111f2b; }
+.aic-app .mini-road { display: block; color: var(--green); font-size: 30px; }
+.aic-app .project-mini p { color: var(--muted); font-size: 12px; margin-top: 5px; }
+.aic-app .version { display: block; font-size: 8px; color: #6a8995; letter-spacing: 1px; margin-top: 14px; }
+.aic-app .operator { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 11px; }
+.aic-app .operator > div, .aic-app .avatar { background: #263745; border: 1px solid #39505a; border-radius: 50%; width: 32px; height: 32px; display: grid; place-items: center; }
+.aic-app .operator small { display: block; font-size: 9px; color: var(--muted); }
+.aic-app .main-shell { flex: 1; min-width: 0; }
+.aic-app .topbar { min-height: 72px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; gap: 16px; }
+.aic-app .breadcrumb { color: var(--muted); font-size: 12px; }
+.aic-app .breadcrumb span { margin: 0 15px; color: #536775; }
+.aic-app .breadcrumb b { color: #d1dcdf; font-weight: 400; }
+.aic-app .top-status { display: flex; align-items: center; gap: 22px; }
+.aic-app .top-clock { font-size: 11px; color: var(--muted); }
+.aic-app .top-clock b { color: #c0d3d7; margin-left: 9px; }
+.aic-app main { padding: 30px; max-width: 1900px; margin: auto; }
+.aic-app .page-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 23px; }
+.aic-app .eyebrow { color: #77909e; font-size: 9px; letter-spacing: 1.8px; }
+.aic-app h1 { font-size: clamp(23px, 2.1vw, 34px); font-weight: 600; letter-spacing: 1px; margin: 8px 0; }
+.aic-app .page-heading p { color: var(--muted); font-size: 12px; }
+.aic-app .heading-divider { padding: 0 12px; color: #435b6a; }
+.aic-app .primary { background: #60d6b0; color: #09251d; font-weight: 600; }
+.aic-app .primary:hover { background: #84e8c7; }
+.aic-app .secondary { background: #172532; border-color: #324653; font-size: 12px; }
+.aic-app .data-banner { display: flex; align-items: center; gap: 10px; padding: 11px 15px; border: 1px solid #364337; border-radius: 7px; background: #1a241f; color: #b9c4ad; font-size: 11px; }
+.aic-app .data-banner button { margin-left: auto; padding: 0; white-space: nowrap; color: #c5d8b7; font-size: 11px; }
+.aic-app .toolbar, .aic-app .toolbar-left, .aic-app .sampling-status { display: flex; align-items: center; gap: 16px; }
+.aic-app .toolbar { justify-content: space-between; margin: 21px 0; flex-wrap: wrap; }
+.aic-app .select-label { display: flex; align-items: center; gap: 12px; font-size: 11px; color: var(--muted); }
+.aic-app select, .aic-app input { border: 1px solid #304451; background: #142330; border-radius: 6px; padding: 8px 11px; min-width: 0; }
+.aic-app select { font-size: 11px; }
+.aic-app .sampling-status { color: var(--muted); font-size: 11px; gap: 10px; }
+.aic-app .sampling-status > span { display: flex; align-items: center; gap: 6px; }
+.aic-app .icon-button { border-color: var(--line); padding: 7px; }
+.aic-app .ok-dot, .aic-app .warn-dot, .aic-app .badge i { display: inline-block; width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; background: #62dfb8; }
+.aic-app .warn-dot { background: #efb66e; }
+.aic-app .badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border-radius: 4px; font-size: 10px; background: #17382e; color: #88dfbe; white-space: nowrap; }
+.aic-app .badge.amber { background: #392f23; color: #e6b778; }
+.aic-app .badge.blue { background: #1e3248; color: #91b5ee; }
+.aic-app .badge.neutral { background: #22313e; color: #a3bac5; }
+.aic-app .badge i { background: currentColor; }
+.aic-app .kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 20px; }
+.aic-app .kpi, .aic-app .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 9px; }
+.aic-app .kpi { padding: 18px; }
+.aic-app .kpi-label { display: flex; justify-content: space-between; color: #a1b3bc; font-size: 12px; }
+.aic-app .kpi-label svg { color: #6c9190; }
+.aic-app .kpi-value { font-size: 35px; line-height: 1.4; margin: 10px 0 8px; font-variant-numeric: tabular-nums; }
+.aic-app .kpi-value small { font-size: 18px; color: #6f8796; margin-left: 9px; }
+.aic-app .kpi-unit { font-size: 12px; color: var(--muted); margin-left: 9px; }
+.aic-app .kpi-foot { display: flex; justify-content: space-between; gap: 8px; font-size: 10px; color: #7e95a3; }
+.aic-app .amber-text { color: #e9b575; }
+.aic-app .meter, .aic-app .coverage-strip { height: 3px; background: #243642; margin-top: 14px; display: flex; gap: 5px; overflow: hidden; }
+.aic-app .meter span { background: var(--green); }
+.aic-app .coverage-strip i { background: #6e9cb3; flex: 1; }
+.aic-app .risk-caption { font-size: 9px; color: #6d8593; margin-top: 10px; }
+.aic-app .overview-main, .aic-app .overview-bottom { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(300px, 1fr); gap: 20px; margin-bottom: 20px; }
+.aic-app .panel { padding: 21px; min-width: 0; }
+.aic-app .section-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.aic-app .section-title h2 { margin-top: 3px; }
+.aic-app .map-panel { padding-bottom: 15px; }
+.aic-app .map-caption { display: flex; justify-content: space-between; gap: 12px; font-size: 9px; color: #718e9a; }
+.aic-app .map-tag { letter-spacing: 1px; }
+.aic-app .road-svg { width: 100%; height: auto; display: block; margin: 16px 0; }
+.aic-app .map-controls { display: flex; gap: 8px; }
+.aic-app .map-controls button { flex: 1; border: 1px solid var(--line); font-size: 11px; padding: 8px; }
+.aic-app .map-controls button.selected { color: #86e6c4; border-color: #4e9b80; background: #1c3b34; }
+.aic-app .map-controls button span { color: #72939d; font-size: 9px; }
+.aic-app .map-legend { display: flex; flex-wrap: wrap; gap: 15px; font-size: 9px; color: #7893a1; margin-top: 15px; }
+.aic-app .map-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.aic-app .map-legend span:last-child { margin-left: auto; }
+.aic-app .ai-mark { color: #8ce6ca; border: 1px solid #386253; background: #173d32; padding: 3px 8px; border-radius: 4px; font-size: 10px; }
+.aic-app .engine-label { display: flex; gap: 7px; align-items: center; color: #8aa99e; font-size: 10px; }
+.aic-app .ai-orb { width: 78px; height: 78px; border-radius: 50%; border: 1px solid #3b7664; background: radial-gradient(circle, #30624f, #142c2c 70%); box-shadow: 0 0 35px #3cc49e15; margin: 22px auto; display: grid; place-items: center; color: #8cf1cd; }
+.aic-app .ai-orb span { display: none; }
+.aic-app .intelligence > h3 { text-align: center; font-size: 15px; }
+.aic-app .analysis-summary { color: #8ba3af; font-size: 11px; line-height: 1.9; margin: 12px 0 19px; }
+.aic-app .analysis-pipeline { display: flex; justify-content: space-between; color: #8daca9; font-size: 9px; padding: 10px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.aic-app .analysis-pipeline b { color: #507b71; }
+.aic-app .analyze-button { width: 100%; margin-top: 19px; font-size: 12px; }
+.aic-app .text-button { color: #94b5bd; font-size: 11px; width: 100%; margin-top: 9px; }
+.aic-app .analysis-meta { font-size: 10px; color: #91aaa9; padding-top: 15px; }
+.aic-app .historical-note { display: block; color: #e6b778; }
+.aic-app .chart-legend { display: flex; flex-wrap: wrap; gap: 14px; color: #839aa7; font-size: 10px; }
+.aic-app .chart-legend i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; }
+.aic-app .chart-legend span:last-child { margin-left: auto; }
+.aic-app .count-tag { font-size: 11px; padding: 2px 8px; background: #253743; border-radius: 5px; color: #a0b5bf; }
+.aic-app .event-item { display: flex; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.aic-app .event-dot { width: 6px; height: 6px; background: #e6b778; border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+.aic-app .event-item > div { flex: 1; }
+.aic-app .event-item > div > div { display: flex; justify-content: space-between; gap: 12px; }
+.aic-app .event-item b { font-size: 12px; font-weight: 500; }
+.aic-app .event-item p, .aic-app .event-item div > span:not(.badge) { color: #8298a5; font-size: 10px; }
+.aic-app .event-item p { margin: 5px 0; }
+.aic-app .empty-state { text-align: center; color: #839da9; padding: 35px 12px; }
+.aic-app .empty-state p { margin: 12px 0 5px; }
+.aic-app .large-empty { padding: 70px 20px; }
+.aic-app .large-empty button { margin-top: 20px; }
+.aic-app .table-toolbar { display: flex; align-items: center; gap: 12px; padding: 10px 0 22px; }
+.aic-app .table-toolbar input { width: 320px; }
+.aic-app .table-toolbar > span { margin-left: auto; color: var(--muted); font-size: 11px; }
+.aic-app .table-scroll { overflow-x: auto; }
+.aic-app table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+.aic-app th { color: #879daa; font-size: 11px; font-weight: 400; background: #162431; }
+.aic-app th, .aic-app td { padding: 13px 16px; border-bottom: 1px solid var(--line); }
+.aic-app td { font-size: 12px; }
+.aic-app .device-name { display: block; padding: 0; text-align: left; color: #b4d9d3; }
+.aic-app .device-name small { display: block; color: var(--muted); font-size: 10px; margin-top: 3px; }
+.aic-app .numeric { font-variant-numeric: tabular-nums; }
+.aic-app .numeric small, .aic-app .muted { color: var(--muted); }
+.aic-app .table-footer { display: flex; justify-content: space-between; gap: 16px; color: #77919e; font-size: 11px; margin-top: 18px; }
+.aic-app .analysis-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; }
+.aic-app .model-card { margin-bottom: 20px; }
+.aic-app .model-row { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+.aic-app .model-row span { color: #8da4af; }
+.aic-app .model-row b { font-weight: 500; }
+.aic-app .helper { color: #8ba1ad; font-size: 12px; line-height: 1.9; margin: 16px 0; }
+.aic-app .rule-card ol { padding-left: 22px; font-size: 12px; }
+.aic-app .rule-card li { padding: 10px 0; }
+.aic-app .rule-card li span { display: block; color: #899faa; }
+.aic-app .finding { border: 1px solid #314651; border-radius: 7px; padding: 18px; margin-top: 17px; }
+.aic-app .finding-head { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); }
+.aic-app .finding h3 { margin: 14px 0 10px; }
+.aic-app .finding p { font-size: 12px; color: #a3b4bf; margin-bottom: 10px; }
+.aic-app .ticket { display: flex; align-items: center; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.aic-app .ticket-symbol { color: #88b5ab; background: #1a3432; padding: 13px; border-radius: 8px; }
+.aic-app .ticket-content { flex: 1; }
+.aic-app .ticket-content > div { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 11px; }
+.aic-app .ticket h3 { margin: 12px 0 8px; }
+.aic-app .ticket p, .aic-app .ticket small { font-size: 12px; color: #8fa5af; }
+.aic-app .settings-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.aic-app .form-label { display: grid; gap: 9px; margin: 20px 0; font-size: 12px; color: #a6bac3; }
+.aic-app .setting-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.aic-app .checkbox-row { display: flex; align-items: center; gap: 10px; }
+.aic-app input[type=checkbox] { accent-color: #62dfb8; }
+.aic-app details { margin-top: 20px; font-size: 12px; color: #9bb2bc; }
+.aic-app summary { cursor: pointer; }
+.aic-app pre { overflow-x: auto; padding: 15px; border-radius: 5px; background: #0b1520; font-size: 11px; }
+.aic-app .connection-note { padding: 15px; background: #182e31; color: #94b8b7; border-radius: 7px; font-size: 11px; margin-top: 24px; }
+.aic-app .error-box { color: #ffb3a6; border: 1px solid #7b4940; background: #392423; padding: 12px; border-radius: 6px; margin: 15px 0; font-size: 12px; }
+.aic-app footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #647f8e; font-size: 9px; padding: 20px 0 0; border-top: 1px solid var(--line); margin-top: 28px; }
+.aic-app footer b { color: #9cb5b9; font-size: 12px; margin-right: 5px; }
+.aic-app footer > span > span { margin-left: 12px; }
+.aic-app footer i { display: inline-block; width: 3px; height: 3px; background: #5c7f86; margin: 0 9px 2px; }
+.aic-app .toast { position: fixed; z-index: 100; bottom: 25px; left: 50%; transform: translateX(-50%); max-width: calc(100% - 32px); padding: 14px 20px; background: #1b3833; border: 1px solid #44806c; border-radius: 9px; box-shadow: 0 8px 40px #0006; display: flex; align-items: center; gap: 12px; }
+.aic-app .toast > span { color: #8befcb; }
+.aic-app .toast button { padding: 0 5px; }
+.aic-app .modal-backdrop { position: fixed; z-index: 110; inset: 0; background: #020811bb; backdrop-filter: blur(6px); display: grid; place-items: center; padding: 20px; }
+.aic-app .modal { width: min(100%, 490px); max-height: 90vh; overflow: auto; position: relative; padding: 30px; background: #142330; border: 1px solid #3b5361; border-radius: 13px; box-shadow: 0 20px 80px #0007; }
+.aic-app .modal h2 { margin: 9px 0; font-size: 23px; }
+.aic-app .modal-close { position: absolute; top: 12px; right: 12px; font-size: 20px; }
+.aic-app .sensor-reading { font-size: 48px; color: #8fe8c6; margin: 25px 0 10px; }
+.aic-app .sensor-reading small { font-size: 18px; margin-left: 12px; }
+.aic-loading { min-height: 100vh; display: grid; place-items: center; background: #0a101c; color: #bce7d9; font: 16px system-ui; }
+.aic-legacy-bar { position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%); z-index: 10000; display: flex; align-items: center; gap: 15px; padding: 8px 14px; border: 1px solid #3e665c; border-radius: 8px; background: #102620ee; color: #c4e2d9; font: 12px system-ui; }
+.aic-legacy-bar button { background: #65d9b3; color: #09271e; border: 0; border-radius: 5px; padding: 9px 12px; cursor: pointer; white-space: nowrap; }
+@media (max-width: 1200px) {
+  .aic-app .sidebar { width: 190px; padding-inline: 12px; }
+  .aic-app main { padding: 22px; }
+  .aic-app .overview-main, .aic-app .overview-bottom { grid-template-columns: minmax(0, 1.5fr) minmax(270px, 1fr); gap: 14px; }
+  .aic-app .kpi-grid { gap: 12px; }
+  .aic-app .kpi { padding: 14px; }
+  .aic-app .kpi-foot { flex-wrap: wrap; }
+}
+@media (max-width: 960px) {
+  .aic-app .sidebar { width: 170px; }
+  .aic-app .overview-main, .aic-app .overview-bottom, .aic-app .analysis-layout, .aic-app .settings-grid { grid-template-columns: 1fr; }
+  .aic-app .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .aic-app .top-clock { display: none; }
+  .aic-app .page-heading { align-items: flex-start; flex-direction: column; }
+  .aic-app .table-toolbar { flex-wrap: wrap; }
+  .aic-app .table-toolbar > span { margin-left: 0; }
+  .aic-app .ticket { flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  .aic-app { display: block; }
+  .aic-app .sidebar { position: static; width: 100%; height: auto; padding: 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .aic-app .brand { padding: 0 4px 14px; }
+  .aic-app .brand b { font-size: 23px; }
+  .aic-app .brand small { display: inline; margin-left: 10px; letter-spacing: 2px; }
+  .aic-app .brand-symbol { width: 33px; height: 33px; }
+  .aic-app .workspace-label, .aic-app .sidebar-bottom, .aic-app .sidebar-divider { display: none; }
+  .aic-app nav { grid-template-columns: repeat(4, 1fr); gap: 3px; }
+  .aic-app nav button { padding: 10px 3px; gap: 5px; font-size: 11px; flex-direction: column; }
+  .aic-app .sidebar-link { width: auto; font-size: 11px; padding: 10px; }
+  .aic-app .sidebar-link svg { width: 15px; }
+  .aic-app .topbar { padding: 12px 16px; min-height: 58px; }
+  .aic-app .top-status { gap: 10px; }
+  .aic-app .avatar { display: none; }
+  .aic-app main { padding: 20px 14px; }
+  .aic-app .heading-divider { padding: 0 4px; }
+  .aic-app .data-banner { align-items: flex-start; }
+  .aic-app .data-banner button { flex-shrink: 0; }
+  .aic-app .toolbar-left { flex-wrap: wrap; gap: 10px; }
+  .aic-app .select-label { gap: 6px; }
+  .aic-app .kpi-value { font-size: 29px; }
+  .aic-app .panel { padding: 16px; }
+  .aic-app .map-caption { flex-direction: column; gap: 4px; }
+  .aic-app .map-controls { flex-wrap: wrap; }
+  .aic-app .map-controls button { min-width: 85px; font-size: 10px; flex-wrap: wrap; }
+  .aic-app .table-toolbar input { width: 100%; }
+  .aic-app .table-footer { flex-direction: column; }
+  .aic-app .ticket-symbol { display: none; }
+  .aic-app .ticket-content { min-width: 100%; }
+  .aic-app .toast { width: calc(100% - 28px); font-size: 12px; }
+  .aic-legacy-bar { width: calc(100% - 24px); box-sizing: border-box; font-size: 10px; }
+}

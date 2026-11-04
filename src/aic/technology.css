@@ -1,0 +1,291 @@
+/* Technology theme: cyan telemetry on a deep-blue command surface. */
+.aic-app { --bg: #050c18; --panel: #0a1828; --line: #1a354d; --muted: #83a0b7; --green: #4bdeeb; background: radial-gradient(ellipse at 78% 0, #0d31564d, transparent 50%), linear-gradient(#0e284018 1px, transparent 1px), linear-gradient(90deg, #0e284018 1px, transparent 1px), #050c18; background-size: auto, 40px 40px, 40px 40px, auto; color: #e1eef8; }
+.aic-app .sidebar { background: linear-gradient(180deg, #0b1d32, #060f1d 70%); border-right-color: #183a55; width: 220px; }
+.aic-app .brand-symbol { border-color: #2e98b5; color: #64e6ff; background: #143e54; box-shadow: 0 0 22px #22cfff20, inset 0 0 12px #38c9ff18; border-radius: 10px 2px 10px 2px; }
+.aic-app .brand b { color: #e7f9ff; }
+.aic-app .brand small { color: #719bb4; }
+.aic-app .workspace-label { color: #4e7896; }
+.aic-app nav button { border-radius: 6px; position: relative; }
+.aic-app nav button.active, .aic-app .sidebar-link.active { background: linear-gradient(90deg, #13658a66, #163a5922); color: #80e9ff; border-color: #1e4e6e; box-shadow: inset 3px 0 #45dfff; }
+.aic-app nav button.active svg { filter: drop-shadow(0 0 5px #34cfff80); }
+.aic-app .project-mini { background: linear-gradient(145deg, #112c42, #0c1929); border-color: #20465e; position: relative; overflow: hidden; }
+.aic-app .project-mini::after { content: ''; position: absolute; width: 100px; height: 100px; border: 1px solid #47caff22; border-radius: 50%; right: -40px; top: -30px; box-shadow: 0 0 0 14px #47caff08, 0 0 0 30px #47caff05; }
+.aic-app .topbar { background: #071322bb; backdrop-filter: blur(14px); border-bottom-color: #18344b; }
+.aic-app .avatar { background: #12364b; border-color: #2d627c; color: #79d9f1; border-radius: 8px; font: 600 14px ui-monospace, monospace; }
+.aic-app .top-clock b, .aic-app .mono, .aic-app .numeric { font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace; }
+.aic-app main { padding: 28px 32px; }
+.aic-app .page-heading { border-left: 2px solid #42c8f3; padding-left: 18px; margin-bottom: 25px; position: relative; }
+.aic-app .page-heading::before { content: ''; position: absolute; left: -3px; top: 0; width: 4px; height: 16px; background: #8df0ff; box-shadow: 0 0 12px #4adaff; }
+.aic-app .page-heading .eyebrow { color: #48afd0; letter-spacing: 2.2px; }
+.aic-app h1 { font-size: clamp(24px, 2.1vw, 34px); letter-spacing: 1.5px; background: linear-gradient(100deg, #f5fbff 20%, #85cce9); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.aic-app .page-heading p { font-size: 11px; color: #7298b0; }
+.aic-app .data-banner { background: linear-gradient(90deg, #10384d80, #0c233a66); color: #7eb5ce; border: 1px solid #20506b; border-left: 3px solid #37c9e9; }
+.aic-app .data-banner button { color: #74daef; }
+.aic-app .panel, .aic-app .kpi { background: linear-gradient(135deg, #10253acc, #081625f5 65%); border: 1px solid #1b3a54; border-radius: 10px; box-shadow: 0 7px 25px #0002, inset 0 1px #689cba0b; }
+.aic-app .panel { position: relative; }
+.aic-app .panel::before { content: ''; width: 30px; height: 2px; background: #3db6dc; position: absolute; top: -1px; left: 20px; opacity: .7; box-shadow: 0 0 10px #47ceff44; }
+.aic-app .kpi { position: relative; overflow: hidden; padding: 20px; }
+.aic-app .kpi::after { content: ''; position: absolute; right: -25px; top: -25px; width: 90px; height: 90px; border-radius: 50%; border: 1px solid #3585a71c; box-shadow: 0 0 0 12px #3585a708, 0 0 0 27px #3585a706; pointer-events: none; }
+.aic-app .kpi-value { color: #ddf6ff; text-shadow: 0 0 20px #5bd9ff25; font-family: ui-monospace, 'SFMono-Regular', monospace; font-size: 38px; }
+.aic-app .kpi-label svg { color: #4bbad8; }
+.aic-app .kpi:nth-child(2) .kpi-value { color: #a2b8ff; }
+.aic-app .kpi:nth-child(3) .kpi-value { color: #70e9ce; }
+.aic-app .risk-kpi .kpi-value { color: #edbf80; }
+.aic-app .kpi .inline-link { font-size: 10px; color: #68c6e1; padding: 0; }
+.aic-app .primary { background: linear-gradient(110deg, #46d6ed, #4baff4); color: #051d2f; border-color: #74def5; box-shadow: 0 3px 20px #25a9df1a; }
+.aic-app .primary:hover { background: linear-gradient(110deg, #8debf4, #6ac4ff); box-shadow: 0 0 20px #4acfff30; }
+.aic-app .secondary { background: #112840; border-color: #2a516f; color: #a8c9de; }
+.aic-app button:hover { background-color: #183f58; }
+.aic-app input, .aic-app select { background: #0a1c2e; border-color: #264962; color: #c3dceb; border-radius: 5px; }
+.aic-app .eyebrow { color: #548ca9; }
+.aic-app .section-title h2 { font-size: 16px; letter-spacing: .5px; }
+.aic-app .badge.green { background: #0e3a3d; color: #6ae5db; border: 1px solid #205257; }
+.aic-app .badge.blue { background: #122f4e; color: #83cafa; border: 1px solid #244f75; }
+.aic-app .badge.amber { background: #3c2e1e; border: 1px solid #5a4328; }
+.aic-app .badge.neutral { background: #132b42; border: 1px solid #21405a; }
+.aic-app .ok-dot { background: #51dfd0; box-shadow: 0 0 6px #45e6d080; }
+.aic-app .meter span { background: linear-gradient(90deg, #27b8de, #6ee9ec); box-shadow: 0 0 8px #4ad4f3; }
+.aic-app .coverage-strip i { background: #658cff; }
+.aic-app .map-panel { background: radial-gradient(ellipse at 55% 45%, #16436160, transparent 75%), #091827; }
+.aic-app .map-caption { padding: 8px 10px; background: #12314b55; border-left: 2px solid #2d8eaf; }
+.aic-app .road-svg { filter: drop-shadow(0 0 8px #26c9e90b); }
+.aic-app .road-stream { stroke: #61eaff; animation: telemetry-flow 9s linear infinite; filter: drop-shadow(0 0 4px #21ccff); }
+.aic-app .node-pulse { animation: node-glow 2.8s ease-in-out infinite; }
+.aic-app .map-controls button { background: #0d2438; border-color: #20445e; }
+.aic-app .map-controls button.selected { background: #123f53; border-color: #3db9d2; color: #8eeaff; }
+.aic-app .intelligence { background: radial-gradient(ellipse at 50% 30%, #1543694d, transparent 65%), linear-gradient(150deg, #102139, #0a1525); }
+.aic-app .ai-mark { background: #162f52; border-color: #385c8b; color: #8ab6ff; }
+.aic-app .ai-orb { border-color: #3b9fc9; background: radial-gradient(circle, #22608299, #102840 65%); color: #a2edff; box-shadow: 0 0 45px #28a5e225, inset 0 0 25px #4fcbff1a; position: relative; }
+.aic-app .ai-orb::before, .aic-app .ai-orb::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 1px dashed #44c6f04d; animation: orbit 24s linear infinite; }
+.aic-app .ai-orb::after { inset: -15px; border: 1px solid #3a89c122; }
+.aic-app .engine-label { color: #71b8c8; }
+.aic-app th { background: #0e263c; color: #729fb8; }
+.aic-app th, .aic-app td { border-bottom-color: #16334b; }
+.aic-app tbody tr:hover { background: #1b45632b; }
+.aic-app .device-name { color: #83dbef; }
+.aic-app .reading-value { color: #7cdeee; font: 15px ui-monospace, monospace; }
+.aic-app .reading-value small { font-size: 10px; color: #7499b1; }
+.aic-app .model-row { border-bottom-color: #1c3b54; }
+.aic-app .modal { background: linear-gradient(150deg, #102c43, #091725); border-color: #356681; }
+.aic-app .sensor-reading { color: #83e5fa; font-family: ui-monospace, monospace; }
+.aic-app .toast { background: #102e44f5; border-color: #3885a4; }
+.aic-app .connection-console { margin-bottom: 24px; }
+.aic-app .connection-hero { display: flex; align-items: center; gap: 25px; padding: 26px 30px; background: radial-gradient(ellipse at 0 0, #16557c77, transparent 65%), linear-gradient(110deg, #0c2337, #0b1729); border: 1px solid #285777; border-radius: 10px 10px 0 0; position: relative; overflow: hidden; }
+.aic-app .connection-hero::after { content: ''; position: absolute; width: 260px; height: 260px; right: 50px; top: -80px; border: 1px solid #2b90ad22; border-radius: 50%; box-shadow: 0 0 0 30px #2785b008, 0 0 0 60px #2785b006; pointer-events: none; }
+.aic-app .connection-emblem { position: relative; width: 64px; height: 64px; border-radius: 50%; border: 1px solid #49b9da; color: #6de0fa; display: grid; place-items: center; flex-shrink: 0; background: #123f57; box-shadow: 0 0 30px #2dc4ed25; }
+.aic-app .connection-emblem i { position: absolute; inset: -7px; border: 1px dashed #38afca66; border-radius: 50%; animation: orbit 30s linear infinite; }
+.aic-app .connection-emblem i:last-child { inset: -14px; border: 1px solid #299ab722; }
+.aic-app .connection-title { flex: 1; z-index: 1; }
+.aic-app .connection-title h2 { display: flex; align-items: center; gap: 16px; font-size: 23px; margin: 5px 0 7px; }
+.aic-app .connection-title p { font-size: 12px; color: #729db5; }
+.aic-app .connection-score { z-index: 1; text-align: right; }
+.aic-app .connection-score strong { display: block; color: #76e5f6; font: 36px ui-monospace, monospace; }
+.aic-app .connection-score small { font-size: 18px; color: #507e9b; }
+.aic-app .connection-score span { font-size: 10px; color: #7399b1; }
+.aic-app .data-path { display: flex; align-items: center; padding: 25px 35px; border: 1px solid #1b3e58; border-top: 0; background: #0b1c2dc9; border-radius: 0 0 10px 10px; }
+.aic-app .data-path > div { display: grid; grid-template-columns: 28px auto; align-items: center; column-gap: 9px; }
+.aic-app .data-path svg { grid-row: span 2; color: #46b6d8; }
+.aic-app .data-path b { font-size: 12px; font-weight: 500; }
+.aic-app .data-path small { font-size: 9px; color: #6c91a8; }
+.aic-app .path-line { height: 1px; background: #235672; flex: 1; min-width: 15px; margin: 0 22px; position: relative; overflow: hidden; }
+.aic-app .path-line::after { content: ''; position: absolute; left: -20px; width: 20px; height: 1px; background: #6be8ff; box-shadow: 0 0 6px #63deff; animation: packet 3s ease-in infinite; }
+.aic-app .gateway-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 20px; }
+.aic-app .gateway-card { background: linear-gradient(150deg, #102a40, #0a1727); border: 1px solid #254e68; border-radius: 9px; padding: 20px; overflow: hidden; }
+.aic-app .gateway-warning { border-color: #6c5130; }
+.aic-app .gateway-head { display: flex; align-items: center; gap: 12px; }
+.aic-app .gateway-icon { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid #28617a; border-radius: 8px; color: #68d7ee; background: #153b50; }
+.aic-app .gateway-head > div { flex: 1; }
+.aic-app .gateway-head b { font: 600 16px ui-monospace, monospace; letter-spacing: 1px; }
+.aic-app .gateway-head small { display: block; color: #7199af; font-size: 10px; margin-top: 3px; }
+.aic-app .gateway-metrics { display: grid; grid-template-columns: repeat(3, 1fr); margin: 22px 0 17px; gap: 10px; }
+.aic-app .gateway-metrics span { display: block; color: #6e94ac; font-size: 10px; margin-bottom: 6px; }
+.aic-app .gateway-metrics b { color: #b0e0f3; font: 21px ui-monospace, monospace; }
+.aic-app .gateway-metrics small { color: #5e8da7; font-size: 10px; }
+.aic-app .gateway-details { display: grid; grid-template-columns: 75px 1fr; font-size: 10px; line-height: 2.4; border-top: 1px solid #1b3c53; padding-top: 12px; margin: 0; }
+.aic-app .gateway-details dt { color: #638da5; }
+.aic-app .gateway-details dd { margin: 0; color: #a1c0d1; overflow-wrap: anywhere; }
+.aic-app .gateway-track { display: flex; align-items: end; gap: 4px; height: 22px; margin-top: 18px; opacity: .65; }
+.aic-app .gateway-track i { flex: 1; background: linear-gradient(#47cbe3, #164562); border-radius: 1px; }
+.aic-app .gateway-warning .gateway-track i { background: #d49d61; }
+.aic-app .compact-console .connection-hero { border-radius: 10px; padding-block: 20px; }
+.aic-app .compact-console .connection-emblem { width: 45px; height: 45px; }
+.aic-app .compact-console .connection-title h2 { font-size: 19px; }
+.aic-app .compact-console .gateway-track { height: 12px; }
+.aic-app .scenario-control { margin-top: 20px; display: flex; justify-content: space-between; align-items: center; gap: 25px; padding: 23px; background: #0c1d30; border: 1px solid #25485f; border-radius: 9px; }
+.aic-app .scenario-control h3 { margin: 4px 0; }
+.aic-app .scenario-control p { color: #7195ab; font-size: 11px; }
+.aic-app .scenario-buttons { display: flex; gap: 9px; flex-wrap: wrap; }
+.aic-app .scenario-buttons button { font-size: 12px; background: #142e44; border: 1px solid #2a4a63; }
+.aic-app .scenario-buttons button.selected { color: #89eaff; background: #174258; border-color: #49a6c6; }
+.aic-app .integration-advanced { background: #0c1c2e; border: 1px solid #24435b; border-radius: 10px; padding: 20px; }
+.aic-app .integration-advanced > summary { color: #b0d4e6; font-size: 14px; }
+.aic-app .integration-advanced > summary span { font-size: 11px; color: #688da6; margin-left: 20px; }
+.aic-app .integration-advanced[open] > summary { margin-bottom: 24px; }
+.aic-app .explorer { display: grid; gap: 20px; }
+.aic-app .query-form { display: flex; flex-wrap: wrap; gap: 15px; align-items: end; }
+.aic-app .query-form label { display: grid; gap: 8px; flex: 1; min-width: 130px; font-size: 11px; color: #8bacbe; }
+.aic-app .query-form select { padding: 10px; }
+.aic-app .query-form button { font-size: 12px; min-height: 39px; }
+.aic-app .query-note { font-size: 11px; color: #61b6cc; margin-top: 17px; display: flex; gap: 20px; flex-wrap: wrap; }
+.aic-app .query-note span { margin-left: auto; color: #6a91a9; }
+.aic-app .query-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.aic-app .query-stats .panel::before { background: #7978e8; }
+.aic-app .query-stats span { color: #779ab0; font-size: 11px; }
+.aic-app .query-stats b { display: block; font: 30px ui-monospace, monospace; color: #c6e6f8; margin-top: 10px; }
+.aic-app .query-stats small { font-size: 11px; color: #6a94af; margin-left: 10px; }
+.aic-app .result-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 20px; }
+.aic-app .result-heading > span { font-size: 9px; letter-spacing: 1px; }
+.aic-app .tab-switch { display: flex; gap: 6px; }
+.aic-app .tab-switch button { color: #769bb2; font-size: 12px; }
+.aic-app .tab-switch button.selected { background: #153d55; color: #81e6fa; border-color: #296787; }
+.aic-app .tab-switch span { background: #10263b; padding: 1px 6px; border-radius: 4px; font-size: 10px; }
+.aic-app .evidence-cell { white-space: normal; min-width: 240px; font-size: 11px; color: #7eabc1; }
+.aic-app .pagination { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 20px; font-size: 11px; color: #739bb3; }
+.aic-app .pagination > div { display: flex; gap: 9px; }
+.aic-app .range-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
+.aic-app .range-grid > div { border-left: 2px solid #28617a; padding-left: 12px; }
+.aic-app .range-grid span { display: block; color: #6c92aa; font-size: 10px; margin-bottom: 6px; }
+.aic-app .range-grid b { color: #a4cde2; font: 13px ui-monospace, monospace; }
+.aic-app .range-grid small { font-size: 9px; }
+@keyframes telemetry-flow { to { stroke-dashoffset: -296; } }
+@keyframes node-glow { 50% { opacity: .35; stroke-width: 3; } }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes packet { to { left: 100%; } }
+@media (max-width: 1250px) {
+ .aic-app .sidebar { width: 190px; }
+ .aic-app main { padding: 24px; }
+ .aic-app .gateway-grid { gap: 12px; }
+ .aic-app .gateway-card { padding: 16px; }
+ .aic-app .gateway-details { grid-template-columns: 65px 1fr; }
+ .aic-app .scenario-control { align-items: flex-start; flex-direction: column; }
+ .aic-app .range-grid { grid-template-columns: repeat(3, 1fr); }
+ .aic-app .data-path { padding-inline: 20px; }
+ .aic-app .path-line { margin-inline: 12px; }
+}
+@media (max-width: 960px) {
+ .aic-app .sidebar { width: 170px; }
+ .aic-app .gateway-grid { grid-template-columns: 1fr; }
+ .aic-app .gateway-card { padding: 20px; }
+ .aic-app .gateway-details { grid-template-columns: 110px 1fr; }
+ .aic-app .data-path > div { grid-template-columns: 1fr; text-align: center; gap: 6px; }
+ .aic-app .data-path svg { margin: auto; }
+ .aic-app .data-path small { display: none; }
+ .aic-app .connection-title h2 { flex-wrap: wrap; gap: 6px; font-size: 20px; }
+ .aic-app .connection-hero { gap: 20px; padding: 25px; }
+ .aic-app .connection-score { display: none; }
+ .aic-app .query-stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+ .aic-app .sidebar { width: 100%; }
+ .aic-app main { padding: 22px 14px; }
+ .aic-app nav { grid-template-columns: repeat(5, 1fr); }
+ .aic-app nav button { font-size: 10px; }
+ .aic-app nav button.active { box-shadow: inset 0 -2px #45dfff; }
+ .aic-app .page-heading { padding-left: 12px; }
+ .aic-app h1 { font-size: 24px; letter-spacing: 0; }
+ .aic-app .page-heading .eyebrow { font-size: 8px; letter-spacing: 1px; }
+ .aic-app .kpi { padding: 14px; }
+ .aic-app .kpi-value { font-size: 30px; }
+ .aic-app .connection-emblem { width: 42px; height: 42px; }
+ .aic-app .connection-emblem svg { width: 25px; }
+ .aic-app .connection-title h2 { font-size: 17px; }
+ .aic-app .connection-title p { font-size: 10px; }
+ .aic-app .connection-hero { padding: 22px 20px; gap: 20px; }
+ .aic-app .data-path { padding: 20px 12px; }
+ .aic-app .data-path b { font-size: 10px; }
+ .aic-app .path-line { margin-inline: 6px; }
+ .aic-app .integration-advanced { padding: 16px; }
+ .aic-app .integration-advanced > summary span { display: block; margin: 8px 0 0; }
+ .aic-app .range-grid { grid-template-columns: repeat(2, 1fr); }
+ .aic-app .result-heading { align-items: flex-start; flex-direction: column; }
+ .aic-app .query-stats { gap: 12px; }
+ .aic-app .pagination { align-items: flex-start; flex-direction: column; }
+ .aic-app .query-form button { flex: 1; }
+ .aic-app .query-note span { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .aic-app *, .aic-app *::before, .aic-app *::after { animation: none !important; transition: none !important; }
+}
+.aic-app .ticket-summary { display: flex; gap: 35px; align-items: center; border: 1px solid #21445f; background: #0b2033; border-radius: 8px; padding: 18px 22px; margin: 20px 0; }
+.aic-app .ticket-summary > div { min-width: 85px; }
+.aic-app .ticket-summary span { display: block; font-size: 11px; color: #759db3; }
+.aic-app .ticket-summary b { font: 28px ui-monospace, monospace; display: block; margin-top: 6px; }
+.aic-app .ticket-summary button { margin-left: auto; }
+.aic-app .ticket-content .ticket-evidence { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0; padding: 10px 12px; background: #102a3f; border-radius: 5px; font-size: 11px; }
+.aic-app .ticket-content .ticket-evidence > span:last-child { flex: 1; min-width: 180px; color: #96b9cc; }
+.aic-app .ticket .action-label { font-size: 10px; color: #4ebbd4; margin-right: 9px; font-weight: 500; }
+.aic-app .ticket-content > p { margin-bottom: 12px; }
+.aic-app .ticket { align-items: flex-start; }
+.aic-app .ticket > button { margin-top: 25px; white-space: nowrap; }
+@media (max-width: 760px) { .aic-app .ticket-summary { flex-wrap: wrap; gap: 20px; } .aic-app .ticket-summary > div { min-width: 65px; } .aic-app .ticket-summary button { margin-left: 0; } }
+/* Brand and navigation refinements. */
+.aic-app .sidebar { width: 244px; padding: 28px 18px 18px; height: 100dvh; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #254960 transparent; background: radial-gradient(ellipse at 0 0, #16507244, transparent 44%), linear-gradient(180deg, #0a1c2f, #070f1d 75%); }
+.aic-app .brand { gap: 12px; padding: 0 8px 32px; flex-shrink: 0; }
+.aic-app .brand-symbol { width: 46px; height: 50px; border-radius: 13px 4px 13px 4px; border: 1px solid #3daac7; background: linear-gradient(145deg, #1c5369, #0b2d43); box-shadow: 0 0 25px #2dcfff16, inset 0 1px #91edff33; }
+.aic-app .brand-copy { display: grid; gap: 8px; }
+.aic-app .brand .brand-copy b { color: #e8f8ff; font-size: 24px; font-weight: 650; letter-spacing: 2px; white-space: nowrap; line-height: 1.2; }
+.aic-app .brand .brand-copy small { display: block; margin: 0; color: #6ba6c1; letter-spacing: 1.6px; font-size: 10px; white-space: nowrap; }
+.aic-app .workspace-label { display: flex; justify-content: space-between; align-items: center; margin: 0 12px 14px; color: #5e819b; letter-spacing: 1px; font-size: 10px; }
+.aic-app .workspace-label small { color: #3f637d; font-size: 8px; letter-spacing: 1.5px; }
+.aic-app nav { gap: 8px; }
+.aic-app nav button, .aic-app .sidebar-link { min-height: 46px; padding: 11px 13px; gap: 12px; font-size: 13px; font-weight: 500; border-radius: 8px; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
+.aic-app nav button svg, .aic-app .sidebar-link svg { width: 18px; height: 18px; opacity: .85; }
+.aic-app nav button:not(.active):hover, .aic-app .sidebar-link:not(.active):hover { background: #15384e66; color: #c5eafa; border-color: #21435a; }
+.aic-app nav button.active, .aic-app .sidebar-link.active { color: #90eaff; background: linear-gradient(100deg, #15516d88, #11314c66); border: 1px solid #2c6b88; box-shadow: inset 3px 0 #58dfff, 0 3px 15px #0002; }
+.aic-app nav button.active::after { content: ''; width: 4px; height: 4px; background: #7cecff; border-radius: 50%; margin-left: auto; box-shadow: 0 0 7px #5fe5ff; }
+.aic-app nav button.active:has(em)::after { display: none; }
+.aic-app nav em { font: 11px ui-monospace, monospace; background: #513f28; color: #f5c78a; border: 1px solid #7a5b2c66; border-radius: 5px; min-width: 20px; line-height: 20px; }
+.aic-app .sidebar-divider { margin: 23px 12px 21px; border-color: #19334a; }
+.aic-app .service-label { margin-bottom: 8px; }
+.aic-app .sidebar-link { color: #779db5; }
+.aic-app .sidebar-link span:not(.external-arrow) { white-space: nowrap; }
+.aic-app .external-arrow { color: #487994; font-size: 14px; }
+.aic-app .sidebar-bottom { padding-top: 30px; }
+.aic-app .project-mini { padding: 17px 15px 0; border-radius: 10px; background: radial-gradient(ellipse at 90% 0, #1c567155, transparent 75%), #0d2032; border-color: #234a63; }
+.aic-app .project-mini::after { right: -60px; top: -55px; border-color: #4fc8ed18; pointer-events: none; }
+.aic-app .project-card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; position: relative; z-index: 1; }
+.aic-app .project-chip { display: inline-flex; gap: 6px; align-items: center; font-size: 8px; letter-spacing: .8px; color: #59a9c8; }
+.aic-app .project-mini .version { margin: 0; font: 8px ui-monospace, monospace; letter-spacing: .5px; color: #6aa9c5; border: 1px solid #2f5870; border-radius: 4px; padding: 2px 4px; }
+.aic-app .project-mini > b { font-size: 14px; font-weight: 500; letter-spacing: 1px; color: #c0deed; }
+.aic-app .project-mini > p { font-size: 9px; color: #648ba4; margin: 6px 0 15px; white-space: nowrap; }
+.aic-app .sidebar-network { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-top: 1px solid #204158; gap: 10px; }
+.aic-app .sidebar-network > span { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; color: #78b4c7; }
+.aic-app .sidebar-network > b { font: 14px ui-monospace, monospace; color: #81dfec; }
+.aic-app .sidebar-network small { font-size: 9px; color: #527e98; }
+.aic-app .operator { margin-top: 18px; padding: 0 3px; gap: 9px; }
+.aic-app .operator > div { width: 29px; height: 29px; border-radius: 8px; border-color: #274a63; background: #142c40; color: #7bbbd1; }
+.aic-app .operator > span { color: #a1bece; font-size: 10px; }
+.aic-app .operator small { margin-top: 3px; font-size: 8px; color: #4f7691; }
+.aic-app .operator .operator-status { font: 7px ui-monospace, monospace; color: #4d809b; letter-spacing: .6px; margin-left: auto; }
+@media (max-width: 1250px) {
+ .aic-app .sidebar { width: 218px; padding-inline: 14px; }
+ .aic-app .brand { gap: 10px; padding-inline: 5px; }
+ .aic-app .brand .brand-copy b { font-size: 22px; }
+ .aic-app .brand .brand-copy small { font-size: 9px; letter-spacing: 1px; }
+ .aic-app .brand-symbol { width: 40px; height: 44px; }
+ .aic-app nav button, .aic-app .sidebar-link { font-size: 12px; }
+ .aic-app .project-mini > p { font-size: 8px; }
+}
+@media (max-width: 960px) {
+ .aic-app .sidebar { width: 196px; padding-inline: 10px; }
+ .aic-app .brand .brand-copy b { font-size: 20px; letter-spacing: 1px; }
+ .aic-app .brand .brand-copy small { letter-spacing: .3px; }
+ .aic-app .workspace-label small { font-size: 7px; }
+ .aic-app .operator .operator-status { display: none; }
+ .aic-app nav button, .aic-app .sidebar-link { padding-inline: 10px; gap: 10px; }
+}
+@media (max-width: 640px) {
+ .aic-app .sidebar { width: 100%; height: auto; overflow: visible; padding: 16px 12px 10px; }
+ .aic-app .brand { padding: 0 6px 19px; gap: 12px; }
+ .aic-app .brand .brand-copy b { font-size: 21px; letter-spacing: 2px; }
+ .aic-app .brand .brand-copy small { font-size: 9px; letter-spacing: 1px; }
+ .aic-app .brand-copy { gap: 5px; }
+ .aic-app .brand-symbol { width: 38px; height: 41px; }
+ .aic-app .workspace-label, .aic-app .sidebar-bottom { display: none; }
+ .aic-app nav { gap: 4px; }
+ .aic-app nav button { min-height: 60px; font-size: 10px; padding: 8px 2px; gap: 7px; }
+ .aic-app nav button.active { box-shadow: inset 0 -2px #58dfff; }
+ .aic-app nav button.active::after { display: none; }
+ .aic-app nav em { position: absolute; top: 2px; right: 3px; font-size: 8px; min-width: 13px; line-height: 13px; }
+ .aic-app .sidebar-link { font-size: 11px; min-height: 37px; margin-top: 7px; }
+}
